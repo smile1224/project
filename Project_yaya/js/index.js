@@ -225,15 +225,47 @@ class IndexLogin{
 }
 new IndexLogin;
 
-// 显示购物车的数量
+// 登录之后才能显示购物车的数量且跳转到购物车
 class CartNum{
     constructor(){
+        this.cartbox = document.querySelector(".shopcar");
         this.car = document.querySelector(".shopcar b");
         this.getcookie();
     }
     getcookie(){
         this.goods = getCookie("AddGoods")? JSON.parse(getCookie("AddGoods")) : [];
+        this.info = getCookie("UserInfo") ? JSON.parse(getCookie("UserInfo")) : [];
+        this.testlogin();
+        this.addevent();
+    }
+    testlogin(){
+        this.status = false;
+        if(this.info.length != 0){
+            for(var i in this.info){
+                if(this.info[i].status == true){
+                    this.status = true;
+                    this.shownum();
+                    return;
+                }
+            }
+        } 
+    }
+    addevent(){
+        this.cartbox.onclick = ()=>{
+            if(this.info.length == 0){
+                location.href = "login.html";
+                return;
+            }else if(this.status == false){
+                location.href = "login.html";
+                return;
+            }
+            location.href = "shoppingcar.html";
+            this.shownum();
+        }
+    }
+    shownum(){
         this.car.innerHTML = this.goods.length;
+        
     }
 }
 new CartNum();

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车-丫丫网</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/shoppingcar.css">
+    <!-- <link rel="stylesheet" href="sass/public.css">
+    <link rel="stylesheet" href="sass/shoppingcar.css"> -->
+</head>
+<body>
+    <div id="top">
+        <div class="wrapper">
+            <div class="login l">
+                <!-- <p>
+                    Hi,欢迎来丫丫！
+                    <a href="login.html">登录</a>
+                    <a href="register.html">免费注册</a>
+                </p> -->
+                <p>
+                    <b class="welcome">Hi,欢迎 <span style="color:#4fb99f;font-weight: 700;"></span> 来丫丫！</b>
+                    <a href="login.html" class="lo">登录</a>
+                    <a href="register.html" class="re">免费注册</a>
+                    <em>退出</em>
+                </p>
+            </div>
+            <div class="menu r">
+                <a href="" class="user">个人中心<u></u></a>
+                <a href="" class="help">帮助中心</a>
+                <a href="" class="online">在线客服</a>
+                <a href="" class="topnav">网站导航<u></u></a>
+                <a href="" class="report"><b class="badinfo"></b>不良信息举报</a>
+                <a href="" class="phone"><i class="tel"></i>0871-67996799</a>
+            </div>
+        </div>
+    </div>
+    <div class="shop-body wrapper">
+        <div class="trade-head">
+            <a href="index.html"><img src="images/yaya.png" alt=""></a>
+            <div class="trade-step">
+                <dl class="active">
+                    <dt>1</dt>
+                    <dd>我的购物车</dd>
+                </dl>
+                <dl>
+                    <dt>2</dt>
+                    <dd>填写核对订单</dd>
+                </dl>
+                <dl>
+                    <dt>3</dt>
+                    <dd>付款</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="car-box">
+            <div class="car-none">
+                <img src="images/下载.png" alt="">
+                <p>
+                    购物车里还没有商品
+                    <span>快<a href="index.html">去逛逛</a>吧</span>
+                </p>
+            </div>
+            <div class="car-list">
+                <div class="car-tab">
+                    <div class="left l">
+                        <a href="">
+                            全部商品
+                            <!-- <span class="red">2</span> -->
+                        </a>
+                    </div>
+                    <div class="right r">
+                        <!-- 已选
+                        <span class="red">2</span>
+                        件，合计（不含运费）
+                        <b class="red">￥8749.00</b> -->
+                    </div>
+                </div>
+                <div class="car-title">
+                    <div class="car-check l">
+                        <input type="checkbox" class="all">
+                        全选
+                    </div>
+                    <div class="car-product-box">
+                        <div class="product l">商品</div>
+                        <div class="unit-price l">单价（元）</div>
+                        <div class="count l">数量</div>
+                        <div class="sum l">小计（元）</div>
+                        <div class="action l">操作</div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="item">
+                        <div class="car-check l">
+                            <input type="checkbox">
+                        </div>
+                        <div class="cart-product-box rel">
+                            <div class="product l">
+                                <a href="#" target="_blank" class="itemimg rel l">
+                                    <img src="images/20190830170409768.jpg">
+                                </a> 
+                                <div class="product-title">
+                                    <p class="title-line">
+                                        <a href="#" target="_blank">
+                                            小米 RedmiBook 增强版 14英寸 月光银 i5主频1.6GHz 8GB 512GB固态 MX250 
+                                        </a>
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="unit-price l">
+                                <b>4150.00</b>
+                            </div>
+                            <div class="count l">
+                                <!-- <a href="">-</a>
+                                <input type="text" disabled>
+                                <a href="">+</a> -->
+                                <input type="number" min="1" class="num">
+                            </div>
+                            <div class="sum l">
+                                <b class="red">4150.00</b>
+                            </div> 
+                            <div class="action l">
+                                <a>删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-total">
+                    <div class="left">
+                        <div class="car-check">
+                            <input type="checkbox" class="all">
+                            全选
+                        </div>
+                        <a class="delgood" style="cursor: pointer;">删除</a>
+                    </div>
+                    <div class="right">
+                        <span><img src="images/下载 (1).png" alt=""></span>
+                        <span>
+                            已选商品<b class="red totalnum">0</b> 件
+                        </span>
+                        <span>
+                            总计（不含运费）：<b class="red totalprice">￥00</b> 
+                        </span>
+                        <button>结&nbsp;算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="promise">
+                <a href="">
+                    <dl>
+                        <dt class="d1"></dt>
+                        <dd>
+                            <h4>新丫丫 新生态</h4>
+                            <p>丫丫网，不止于手机</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt class="d2"></dt>
+                        <dd>
+                            <h4>15天包换</h4>
+                            <p>售后保证，后顾无忧</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt class="d3"></dt>
+                        <dd>
+                            <h4>1小时极速达</h4>
+                            <p>自建物流，直达客户</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt class="d4"></dt>
+                        <dd>
+                            <h4>丫丫维修</h4>
+                            <p>透明报价，公平公开</p>
+                        </dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt class="d5"></dt>
+                        <dd>
+                            <h4>门店保障</h4>
+                            <p>实体购物，更加安心</p>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="foot-help">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="">会员注册与使用</a>
+                        <a href="">丫丫评测</a>
+                        <a href="">积分介绍</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>付款方式</dt>
+                    <dd>
+                        <a href="">在线支付</a>
+                        <a href="">分期介绍</a>
+                        <a href="">退款介绍</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="">到店自提</a>
+                        <a href="">送货上门</a>
+                        <a href="">快递运输</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">售后服务政策</a>
+                        <a href="">维修质保政策</a>
+                        <a href="">丫丫服务</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <a href="">常见问题解答</a>
+                        <a href="">会员介绍</a>
+                        <a href="">交易条款</a>
+                    </dd>
+                </dl>
+                <dl class="foot-sns">
+                    <dt></dt>
+                    <dd>
+                        <h4>丫丫网官方微信</h4>
+                        <p>扫描二维码，即刻调戏丫丫，更多精彩活动等着你哦！</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <div id="bottom">
+        <div class="wrapper">
+            <div class="foot-nav">
+                <a href="">常见问题</a><i>|</i>
+                <a href="">关于我们</a><i>|</i>
+                <a href="">联系我们</a><i>|</i>
+                <a href="">投诉建议</a><i>|</i>
+            </div>
+            <div class="copy">
+                <p>各门店营业时间：周一至周日 09:00-21:30      全国服务热线：0871-67996799      工作时间：周一至周日 09:00-21:30</p>
+                <p>
+                    网站ICP备案号：
+                    <a href="">滇ICP备11005817号-7 </a>
+                    电信业务经营许可证：滇B2-20160011号      
+                    <a href="">滇公网安备 53011102000207号</a>
+                </p>
+                <p>丫丫 Copyright © 2007 - 2019 丫丫网 All Rights Reserved</p>
+                <p>昆明丫丫科技有限公司版权所有</p>
+            </div>
+            <div class="bot-link">
+                <a href=""><img src="images/botpic1c.jpg" alt=""></a>
+                <a href=""><img src="images/verified.png" alt=""></a>
+                <a href=""><img src="images/industry-and-cyber supervision.jpg" alt=""></a>
+                <a href=""><img src="images/yunnan-network-police.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="libs/ajax.js"></script>
+<script src="libs/cookie.js"></script>
+<script src="js/shoppingcar.js"></script>
+</html>

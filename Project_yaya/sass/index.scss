@@ -148,7 +148,8 @@ header{
             }
         }
         .search{
-            height:72px;margin:25px 0 0 115px;
+            height:72px;
+            margin:25px 0 0 115px;
             .searchbox{
                 form{
                     height: 38px;
@@ -164,6 +165,7 @@ header{
                             display:block;
                             line-height: 34px;
                             color: #333;
+                            border:0;
                         }
                         ul{
                             position: relative;
@@ -217,6 +219,7 @@ header{
                 background:#fff;
                 font-size:$fz;
                 line-height: 38px;
+                cursor: pointer;
                 i{
                     @include seti(18px,18px,-78px,-361px);
                     

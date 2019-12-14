@@ -49,8 +49,16 @@
                 <div class="search l">
                     <div class="searchbox">
                         <form action="">
-                            <input type="text" placeholder="5G手机" class="txt">
-                            <input type="submit" value="搜索" class="btn">
+                            <!-- <input type="text" placeholder="5G手机" class="txt"> -->
+                            <div class="txt">
+                                <!-- <span>手机</span> -->
+                                <input type="text" value="手机">
+                                <ul>
+                                    <li class="active">手机</li>
+                                    <li>电脑</li>
+                                </ul>
+                            </div>
+                            <input type="text" value="搜索" class="btn">
                         </form>
                     </div>
                     <div class="hotsearch">
@@ -63,7 +71,7 @@
                     </div>
                 </div>
                 <div class="shopcar r">
-                    <a href="shoppingcar.html" class="car">
+                    <a class="car" style="cursor: pointer;">
                         <i></i>
                         <span>购物车</span>
                         <b>0</b>

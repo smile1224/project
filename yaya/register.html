@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- <link rel="stylesheet" href="sass/public.css">
+    <link rel="stylesheet" href="sass/register.css"> -->
+</head>
+<body>
+    <header>
+        <div class="wrapper-lo">
+            <a href="index.html">
+                <img src="images/yaya.png" alt="">
+                <span>新用户注册</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="reg-wrap">
+            <div class="reg-tab">
+                <span>账号注册</span>
+                <div class="regtip">
+                    已有丫丫网账号？现在就
+                    <a href="login.html">登录</a>
+                </div>
+            </div>
+            <div class="reg-body">
+                <dl>
+                    <dt>
+                        <i>*</i>
+                        用户名
+                    </dt>
+                    <dd>
+                        <input type="text" id="userid">
+                        <em>4-16位字母、数字或汉字，请不要输入特殊字符！</em>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <i>*</i>
+                        密码
+                    </dt>
+                    <dd>
+                        <input type="password" id="userpwd">
+                        <em>6个字符以上的字母或数字</em>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <i>*</i>
+                        重复密码
+                    </dt>
+                    <dd>
+                        <input type="password" id="userpwd-same">
+                        <em>请重复输入密码确认不会输错</em>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <i>*</i>
+                        手机号码
+                    </dt>
+                    <dd>
+                        <input type="text" id="usermobile">
+                        <em>手机号码非常重要，找回密码及购物都会用到</em>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        邮箱地址
+                    </dt>
+                    <dd>
+                        <input type="email" id="usermail">
+                        <em>请填写邮箱，用于找回密码</em>
+                    </dd>
+                </dl>
+                <dl id="testcode">
+                    <dt>
+                        验证码
+                    </dt>
+                    <dd>
+                        <input type="" id="yzm">
+                        <span></span>
+                        <i></i>
+                        <em>看不清楚？换一张</em>
+                    </dd>
+                </dl>
+                <dl id="agree">
+                    <dt></dt>
+                    <dd>
+                        <input type="checkbox" id="mmprovision" checked>
+                        <label for="mmprovision">
+                            我已认真阅读并同意
+                            <a href="">《丫丫网用户协议》</a>
+                        </label>
+                        <span></span>
+                    </dd>
+                    <dl id="success">
+                        <dd></dd>
+                    </dl>
+                </dl>
+                <dl id="register">
+                    <dt></dt>
+                    <dd>
+                        <button id="regbtn">提交注册</button>
+                    </dd>
+                </dl>
+                
+            </div>
+        </div>
+    </main>
+
+    <div id="bottom">
+        <div class="wrapper">
+            <div class="foot-nav">
+                <a href="">常见问题</a><i>|</i>
+                <a href="">关于我们</a><i>|</i>
+                <a href="">联系我们</a><i>|</i>
+                <a href="">投诉建议</a><i>|</i>
+            </div>
+            <div class="copy">
+                <p>各门店营业时间：周一至周日 09:00-21:30      全国服务热线：0871-67996799      工作时间：周一至周日 09:00-21:30</p>
+                <p>
+                    网站ICP备案号：
+                    <a href="">滇ICP备11005817号-7 </a>
+                    电信业务经营许可证：滇B2-20160011号      
+                    <a href="">滇公网安备 53011102000207号</a>
+                </p>
+                <p>丫丫 Copyright © 2007 - 2019 丫丫网 All Rights Reserved</p>
+                <p>昆明丫丫科技有限公司版权所有</p>
+            </div>
+            <div class="bot-link">
+                <a href=""><img src="images/botpic1c.jpg" alt=""></a>
+                <a href=""><img src="images/sm_124x47.png" alt=""></a>
+                <a href=""><img src="images/bot_link.jpg" alt=""></a>
+                <a href=""><img src="images/landui.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="libs/cookie.js"></script>
+<script src="js/register.js"></script>
+</html>

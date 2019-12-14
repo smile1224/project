@@ -1,0 +1,619 @@
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.red {
+  color: #f21c1c;
+}
+
+#top {
+  height: 31px;
+  background: #e3e4e5;
+}
+
+#top .wrapper {
+  font: 12px/30px "";
+}
+
+#top .wrapper .login {
+  margin-left: 15px;
+  color: #6b6b6b;
+}
+
+#top .wrapper .login p {
+  display: flex;
+}
+
+#top .wrapper .login p a {
+  color: #6b6b6b;
+  margin: 0 5px;
+}
+
+#top .wrapper .login p a:hover {
+  color: #f9b548;
+}
+
+#top .wrapper .login p em {
+  cursor: pointer;
+}
+
+#top .wrapper .login p em:hover {
+  color: #f9b548;
+}
+
+#top .wrapper .menu a {
+  padding: 0 10px;
+  float: left;
+}
+
+#top .wrapper .menu a:hover {
+  color: #f9b548;
+}
+
+#top .wrapper .menu a:hover u {
+  transform: rotate(180deg);
+  transition: 0.2s linear;
+}
+
+#top .wrapper .menu a.phone {
+  color: #f9b548;
+}
+
+#top .wrapper .menu a.phone:hover {
+  background: #fff;
+}
+
+#top .wrapper .menu u {
+  display: inline-block;
+  width: 0;
+  border-top: solid 7px #bbb;
+  border-left: solid 5px #e3e4e5;
+  border-right: solid 5px #e3e4e5;
+  margin: 0 3px;
+}
+
+#top .wrapper .menu b.badinfo {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  background: url(../images/jubao.png) no-repeat center;
+}
+
+#top .wrapper .menu i {
+  margin: 0 3px;
+}
+
+#top .wrapper .menu i.vip {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 18px;
+  height: 16px;
+  background-position: -54px -19px;
+  vertical-align: text-top;
+}
+
+#top .wrapper .menu i.tel {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 17px;
+  height: 18px;
+  background-position: -72px -19px;
+  vertical-align: text-top;
+}
+
+.shop-body .trade-head {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-body .trade-head a img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.shop-body .trade-head .trade-step {
+  display: flex;
+}
+
+.shop-body .trade-head .trade-step dl {
+  background: #dfdfdf;
+  height: 8px;
+  width: 120px;
+  position: relative;
+  top: 30px;
+}
+
+.shop-body .trade-head .trade-step dl dt {
+  background: #dfdfdf;
+  border-color: #dfdfdf;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.shop-body .trade-head .trade-step dl dd {
+  font-size: 12px;
+  color: #dfdfdf;
+  font-weight: 700;
+  top: 24px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.shop-body .trade-head .trade-step .active {
+  background: #f9b548;
+}
+
+.shop-body .trade-head .trade-step .active dt {
+  background: #f9b548;
+  border-color: #f9b548;
+}
+
+.shop-body .trade-head .trade-step .active dd {
+  color: #f9b548;
+}
+
+.shop-body .car-box .car-none {
+  display: none;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.shop-body .car-box .car-none p {
+  font-size: 12px;
+}
+
+.shop-body .car-box .car-none p span a {
+  color: #f9b548;
+}
+
+.shop-body .car-box .car-list .car-tab {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.shop-body .car-box .car-list .car-tab .left a {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 15px;
+  color: #f21c1c;
+  border-bottom: 2px solid #f21c1c;
+  height: 30px;
+}
+
+.shop-body .car-box .car-list .car-tab .right {
+  font-size: 12px;
+}
+
+.shop-body .car-box .car-list .car-tab .right b {
+  font-weight: 700;
+}
+
+.shop-body .car-box .car-list .car-title {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.shop-body .car-box .car-list .car-title .car-check {
+  width: 50px;
+  text-align: center;
+}
+
+.shop-body .car-box .car-list .car-title .car-check input {
+  vertical-align: middle;
+  margin-right: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.shop-body .car-box .car-list .car-title .car-product-box {
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+.shop-body .car-box .car-list .car-title .car-product-box .product {
+  width: 446px;
+  padding-left: 104px;
+}
+
+.shop-body .car-box .car-list .car-title .car-product-box .unit-price {
+  width: 120px;
+}
+
+.shop-body .car-box .car-list .car-title .car-product-box .count {
+  width: 120px;
+}
+
+.shop-body .car-box .car-list .car-title .car-product-box .sum {
+  width: 120px;
+}
+
+.shop-body .car-box .car-list .car-item {
+  border: 1px solid #dfdfdf;
+  margin-top: 10px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.shop-body .car-box .car-list .car-item .car-check {
+  width: 50px;
+  text-align: center;
+  padding: 15px 0 0;
+}
+
+.shop-body .car-box .car-list .car-item .car-check input {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box {
+  margin-left: 50px;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .product a.itemimg {
+  display: inline-block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eee;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .product a.itemimg img {
+  width: 78px;
+  height: 78px;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .product .product-title {
+  margin: 0 46px 0 102px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .product .product-title p a {
+  font-size: 12px;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .product .product-title p a:hover {
+  color: #f9b548;
+  text-decoration: underline;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .unit-price {
+  width: 120px;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .unit-price b {
+  font-weight: 700;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .count {
+  width: 120px;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .count a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 16px;
+  border: 1px solid #dfdfdf;
+  background: #f5f5f5;
+  vertical-align: middle;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .count a:hover {
+  color: #f9b548;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .count input {
+  width: 30px;
+  height: 20px;
+  margin: 0 3px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .sum {
+  width: 120px;
+}
+
+.shop-body .car-box .car-list .car-item .cart-product-box .sum b {
+  font-weight: 700;
+}
+
+.shop-body .car-box .car-list .car-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px 0;
+  background: #f5f5f5;
+}
+
+.shop-body .car-box .car-list .car-total .left {
+  margin-left: 10px;
+}
+
+.shop-body .car-box .car-list .car-total .left .car-check {
+  float: left;
+}
+
+.shop-body .car-box .car-list .car-total .left .car-check input {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.shop-body .car-box .car-list .car-total .left a {
+  float: right;
+  color: #666;
+  margin-left: 20px;
+}
+
+.shop-body .car-box .car-list .car-total .right {
+  font-size: 12px;
+  display: flex;
+}
+
+.shop-body .car-box .car-list .car-total .right span {
+  margin-right: 20px;
+}
+
+.shop-body .car-box .car-list .car-total .right span img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.shop-body .car-box .car-list .car-total .right span b {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.shop-body .car-box .car-list .car-total .right button {
+  border: 0;
+  background: #f21c1c;
+  color: #fff;
+  height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.shop-body .car-box .car-list .car-total .right button:hover {
+  background: #f66;
+}
+
+footer {
+  margin-top: 30px;
+  background: #fff;
+  position: relative;
+}
+
+footer .promise {
+  height: 110px;
+}
+
+footer .promise a {
+  display: block;
+  width: 220px;
+  float: left;
+  margin: 30px 0  0 20px;
+  color: #333;
+}
+
+footer .promise a dl {
+  width: 220px;
+}
+
+footer .promise a dl dt {
+  float: left;
+}
+
+footer .promise a dl .d1 {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 50px;
+  height: 50px;
+  background-position: 0 -232px;
+  vertical-align: text-top;
+}
+
+footer .promise a dl .d2 {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 50px;
+  height: 50px;
+  background-position: -50px -232px;
+  vertical-align: text-top;
+}
+
+footer .promise a dl .d3 {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 50px;
+  height: 50px;
+  background-position: -100px -232px;
+  vertical-align: text-top;
+}
+
+footer .promise a dl .d4 {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 50px;
+  height: 50px;
+  background-position: -150px -232px;
+  vertical-align: text-top;
+}
+
+footer .promise a dl .d5 {
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 50px;
+  height: 50px;
+  background-position: 0 -282px;
+  vertical-align: text-top;
+}
+
+footer .promise a dl dd {
+  margin-left: 60px;
+}
+
+footer .promise a dl dd h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+footer .promise a dl dd p {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+footer .promise a dl:hover h4 {
+  color: #f9b548;
+}
+
+footer .foot-help {
+  border-top: 1px solid #eee;
+  height: 160px;
+}
+
+footer .foot-help dl {
+  float: left;
+  height: 110px;
+  width: 180px;
+  padding-top: 30px;
+}
+
+footer .foot-help dl dt {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+footer .foot-help dl dd {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+footer .foot-help dl dd a {
+  font-size: 12px;
+  display: block;
+  line-height: 25px;
+  color: #9c9c9c;
+}
+
+footer .foot-help .foot-sns {
+  width: 250px;
+  float: right;
+}
+
+footer .foot-help .foot-sns dt {
+  float: left;
+  display: inline-block;
+  background: url(../images/icon.png);
+  width: 70px;
+  height: 70px;
+  background-position: -130px -282px;
+  vertical-align: text-top;
+}
+
+footer .foot-help .foot-sns dd {
+  padding: 0;
+  margin: 0 0 0 75px;
+}
+
+footer .foot-help .foot-sns dd h4 {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+footer .foot-help .foot-sns dd p {
+  font-size: 12px;
+  margin-top: 5px;
+  line-height: 20px;
+  color: #999999;
+}
+
+#bottom {
+  background: #f6f6f6;
+  text-align: center;
+  font-size: 12px;
+}
+
+#bottom .foot-nav {
+  height: 50px;
+  line-height: 50px;
+}
+
+#bottom .foot-nav i {
+  margin: 0 15px;
+  color: #ccc;
+}
+
+#bottom .foot-nav a:hover {
+  color: #f9b548;
+}
+
+#bottom .copy {
+  padding-bottom: 15px;
+  line-height: 25px;
+  color: #999;
+}
+
+#bottom .copy a {
+  color: #333;
+}
+
+#bottom .copy a:hover {
+  color: #f9b548;
+}
+
+#bottom .bot-link {
+  height: 60px;
+}
+
+#bottom .bot-link a {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+#bottom .bot-link a img {
+  width: 120px;
+  height: 50px;
+}
+
+#bottom .bot-link .police {
+  background: url(../images/bot_link.jpg);
+  background-position: 0 -100px;
+}

@@ -106,7 +106,7 @@ header{
         height: 145px;
         position: relative;
         .header-main{
-            overflow: hidden;
+            // overflow: hidden;
             height: 100px;
             display:flex;
             justify-content: space-between;
@@ -155,12 +155,37 @@ header{
                         .txt{
                             width:450px;
                             height:34px;
-                            border:1px solid $color;
+                            border:2px solid $color;
                             float:left;
-                            padding:0 10px;
+                            input{
+                                padding:0 10px;
+                                width: 100%;
+                                height: 100%;
+                                display:block;
+                                line-height: 34px;
+                                color: #333;
+                                border:0;
+                            }
+                            ul{
+                                position: relative;
+                                z-index: 10;
+                                background: #fff;
+                                color:#333;
+                                display: none;
+                            }
+                            li{
+                                line-height: 34px;
+                                padding:3px 5px;
+                                font-size: 12px;
+                            }
+                            li.active{
+                                background:#999;
+                            }
                         }
                         .btn{
+                            text-align: center;
                             border:0;
+                            color:#fff;
                             background:$color;
                             font-size:16px;
                             width:70px;

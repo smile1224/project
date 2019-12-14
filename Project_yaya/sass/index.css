@@ -163,6 +163,7 @@ header .wrapper .search .searchbox form .txt input {
   display: block;
   line-height: 34px;
   color: #333;
+  border: 0;
 }
 
 header .wrapper .search .searchbox form .txt ul {
@@ -220,6 +221,7 @@ header .wrapper .shopcar .car {
   background: #fff;
   font-size: 12px;
   line-height: 38px;
+  cursor: pointer;
 }
 
 header .wrapper .shopcar .car i {

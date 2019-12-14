@@ -5,13 +5,11 @@ class ShoppingCar{
         this.totalnum = document.querySelector(".car-total .right .totalnum");
         this.totalprice = document.querySelector(".car-total .right .totalprice");
         this.delgood = document.querySelector(".car-total .left .delgood");
-        // console.log(this.tbody,this.aall,this.totalnum,this.totalprice,this.delgood)
         this.url = "http://localhost/Project_yaya/data/goods_detail.json";
         this.getinfo();
          
     }
     getinfo(){
-        // this.res = getCookie("GoodsList")? JSON.parse(getCookie("GoodsList")) : [];
         // 1. 获取所有的商品数据 
         var that = this;
         ajaxGet(this.url,function(res){
@@ -190,13 +188,19 @@ class ShoppingCar{
             for(var k=0;k<this.aone.length;k++){
                 if(this.aone[k].checked){
                     this.id = this.aone[k].parentNode.parentNode.getAttribute("index");
-                    this.aone[k].parentNode.parentNode.remove();
+                    this.aone[k].parentElement.parentElement.remove();
                     this.changeCookie((i)=>{
                         this.goods.splice(i,1);
-                        this.showTotalNumPrice();
                     })
                 }
             }
+            this.aone = document.querySelectorAll(".one");
+            if(this.aone.length == 0){
+                for(var item of this.aall){
+                    item.checked = "";
+                }
+            }
+            this.showTotalNumPrice();
         }
     }
     
@@ -223,8 +227,10 @@ class ShoppingCar{
     
     // 显示总数量和总价钱
     showTotalNumPrice(){
+        // this.aone = document.querySelectorAll(".one");
         var n=0;
         var sum = 0;
+        console.log(this.aone)
         for(let j=0;j<this.aone.length;j++){
             if(this.aone[j].checked == true){
                 n++;
@@ -266,7 +272,6 @@ class IndexLogin{
             this.register.style.display = "none";
             this.wel.style.display = "block";
             this.span.innerHTML = this.info[this.i].user;
-            // this.userimg.src = "images/t2.png";
         }
     }
     addEvent(){
@@ -274,7 +279,7 @@ class IndexLogin{
         this.exit.onclick = function(){
             that.info[that.i].status = false;
             setCookie("UserInfo",JSON.stringify(that.info));
-            location.reload();
+            location.href = "login.html";
         }
     }
 }
